@@ -26,9 +26,10 @@ def read_from_hash(hash, key)
 end
 
 def update_counting_hash(hash, key)
-  if update_counting_hash["top hat"]
-  update_counting_hash["top hat"] += 1
+  update_counting_hash = {:age => 5}
+  if update_counting_hash[:age]
+  update_counting_hash[:age] += 1
 else
-  update_counting_hash["top hat"] = 1
+  update_counting_hash[:age] = 1
 end
 end
